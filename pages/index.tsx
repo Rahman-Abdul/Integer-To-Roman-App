@@ -10,6 +10,7 @@ export default function Home() {
   const intChange = (e: any) =>{
     setResult(e.target.value)
   }
+
   useEffect(() => {
   setRoman(convertToRoman(result))
   },)
@@ -17,9 +18,9 @@ export default function Home() {
   return (
    <div className={styles.container}>
     <h3> CONVERT INTEGER TO ROMAN NUMERAL</h3>
-    <input type="number" placeholder='enter number' onChange={intChange} value={result}/>
-    <h3>Roman Numeral:</h3>
-      <h1>{roman}</h1>
+    <input type="number" placeholder='Enter number' onChange={intChange} value={result}/>
+      <h3>Roman Numeral:</h3>
+      <h3>{roman}</h3>
    </div>
   )
 }
