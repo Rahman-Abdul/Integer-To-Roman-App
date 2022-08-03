@@ -8,11 +8,11 @@ export default function Home() {
   const [roman, setRoman] = useState <any>("");
 
   const intChange = (e: any) =>{
-    setResult(e.target.value)
+    setResult(e.target.value);
   }
 
   useEffect(() => {
-  setRoman(convertToRoman(result))
+  setRoman(convertToRoman(result));
   },)
 
   return (
